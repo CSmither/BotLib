@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.smither'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile 'com.github.Steveice10:MCProtocolLib:1.12.2-2'
+    compile 'com.github.Steveice10:OpenNBT:1.1'
+    compile 'org.slf4j:slf4j-nop:1.7.26'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+}
